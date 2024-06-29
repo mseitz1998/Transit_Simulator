@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/busTextView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeeScheduleActivity">
+
+    <ScrollView
+        android:id="@+id/backgroundScrollSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/menuButtonSettings"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Menu" />
+
+                <TextView
+                    android:id="@+id/titleTextSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Schedule"
+                    android:textAlignment="textEnd"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/busInfoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading.."
+                android:textAlignment="center"
+                android:textSize="22sp" />
+
+            <ListView
+                android:id="@+id/busScheduleListView"
+                android:layout_width="match_parent"
+                android:layout_height="256dp">
+
+            </ListView>
+
+            <Button
+                android:id="@+id/addNotificationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toggle Notifications" />
+
+            <Button
+                android:id="@+id/goToNotificationsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Notifications" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
