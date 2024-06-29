@@ -9,7 +9,9 @@ Android Studio Project Folder: FinalProject
 __________________________________________________________________________
 App Description: 
 
-This app is intended to function as a simulated bus tracker. 
+This app is intended to function as a simulated bus tracker. This app was
+my final project for COMP2161, and I'm sharing it here with the permission 
+of my course professor, Musfiq Rahman.
 
 The busses are simulated by the activity of the foreground BusService, and 
 this is where the majority of the app’s processing takes place. The movement 
